@@ -1144,7 +1144,7 @@ bzla_opt_init_opts(Bzla *bzla)
            false,
            "prop-prob-rand-input",
            0,
-           0,
+           10,
            0,
            BZLA_PROB_100,
            "probability for selecting a random input instead of an essential "
