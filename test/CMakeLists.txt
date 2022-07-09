@@ -111,6 +111,7 @@ set(sat_testcases
 "normaddneg0.btor"
 "normaddneg1.btor"
 "prop_ineq_bounds_cycle.smt2 -E prop --prop-sext --prop-infer-ineq-bounds --prop-use-inv-lt-concat"
+"prop_essential_checks_cycle.smt2 -E prop --prop-sext --prop-infer-ineq-bounds --prop-use-inv-lt-concat"
 "proxybug.btor"
 "random1.btor"
 "random1.btor2"
