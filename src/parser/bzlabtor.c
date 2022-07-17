@@ -24,6 +24,11 @@
 #include "utils/bzlastack.h"
 #include "utils/bzlautil.h"
 
+#ifdef _WIN32
+#include <windows.h>
+#define strcasecmp lstrcmpi
+#endif
+
 /*------------------------------------------------------------------------*/
 
 void bitwuzla_set_bzla_id(Bitwuzla *bitwuzla,

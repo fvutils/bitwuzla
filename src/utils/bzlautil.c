@@ -590,7 +590,11 @@ bzla_util_current_time(void)
 #ifdef BZLA_HAVE_STAT
 #include <sys/stat.h>
 #include <sys/types.h>
+#ifndef _WIN32
 #include <unistd.h>
+#else
+#include <windows.h>
+#endif
 int32_t
 bzla_util_file_exists(const char *path)
 {
